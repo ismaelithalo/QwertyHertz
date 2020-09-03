@@ -1,4 +1,4 @@
-with open('src/json/text.json') as file:
+with open('src/json/text.txt') as file:
     text = file.read()
 
 text = text.replace("\'", "\"")

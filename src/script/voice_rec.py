@@ -10,8 +10,8 @@ with sr.Microphone() as source:
     text = r.recognize_google(data,show_all=True,language='pt')
     #print(text)
 
-#with open('../json/text.json', 'w') as file:
-with open('src/json/text.json', 'w') as file:
+#with open('../json/text.txt', 'w') as file:
+with open('src/json/text.txt', 'w') as file:
     file.write("{}".format(text))
 
 
