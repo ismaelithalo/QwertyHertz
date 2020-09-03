@@ -20,12 +20,14 @@ if inst == coman_1:
 	time.sleep(2)
 	pyautogui.hotkey('alt','esc')
 
-if inst == coman_2: 
+elif inst == coman_2: 
         pyautogui.hotkey('alt','tab')
         time.sleep(2)
         pyautogui.hotkey('alt','f4')
 
-if inst == coman_3: 
+elif inst == coman_3: 
         pyautogui.hotkey('alt','tab')
         time.sleep(2)
         pyautogui.hotkey('ctrl','alt','t')
+else:
+        print("Comando nao listado ...")
