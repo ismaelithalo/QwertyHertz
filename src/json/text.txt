@@ -1,0 +1,1 @@
+{'alternative': [{'transcript': 'alternar', 'confidence': 0.96170539}], 'final': True}
