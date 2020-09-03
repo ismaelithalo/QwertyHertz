@@ -1,4 +1,5 @@
 import speech_recognition as sr
+import sys
 r = sr.Recognizer()
 
 with sr.Microphone() as source:
@@ -9,6 +10,9 @@ with sr.Microphone() as source:
     data = r.record(source, duration=3)
     text = r.recognize_google(data,show_all=True,language='pt')
     #print(text)
+
+if len(text) == 0:
+    sys.exit()
 
 #with open('../json/text.txt', 'w') as file:
 with open('src/json/text.txt', 'w') as file:
