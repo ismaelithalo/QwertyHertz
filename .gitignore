@@ -1,3 +1,4 @@
-#lixo de teste
-/src/json/command.json
-/src/json/text.txt
+#arquivo que guarda o resultado da gravação codificada
+src/json/command.json
+#arquivo que guarda o resultado da gravação em fake json
+src/json/text.txt
