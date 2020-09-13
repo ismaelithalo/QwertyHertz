@@ -1,0 +1,14 @@
+{
+  "name": "qwerty-hertz",
+  "version": "1.0.0",
+  "description": "Uma aplicaçao de reconhecimento de voz e realizaçao de comandos",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^10.1.1"
+  }
+}
