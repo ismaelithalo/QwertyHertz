@@ -3,4 +3,4 @@ src/json/command.json
 #arquivo que guarda o resultado da gravação em fake json
 src/json/text.txt
 #testes em interface 
-src/GUI/teste /
+src/Python_GUI/teste/
