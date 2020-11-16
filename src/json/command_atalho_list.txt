@@ -1,0 +1,4 @@
+alternar;4;alt;tab;alt;esc
+fechar;4;alt;tab;alt;f4
+Abrir terminal;3;ctrl;alt;t
+teste;2;win;g
