@@ -1,1 +1,1 @@
-{'alternative': [{'transcript': 'teste', 'confidence': 0.90727478}, {'transcript': 'Test'}, {'transcript': 'peste'}, {'transcript': 'Fast'}, {'transcript': 'o teste'}], 'final': True}
+{'alternative': [{'transcript': 'menu', 'confidence': 0.88990051}, {'transcript': 'menino'}, {'transcript': 'menno'}, {'transcript': 'Ameno'}, {'transcript': 'meno'}], 'final': True}

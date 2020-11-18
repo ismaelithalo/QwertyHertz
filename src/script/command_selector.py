@@ -11,28 +11,7 @@ inst = data['alternative'][0]['transcript']
 
 # time.sleep(1)
 print("\nO comando dito foi: {}".format(inst))
-
-# coman_1 = "alternar"
-# coman_2 = "fechar"
-# coman_3 = "Abrir terminal"
-# coman_4 = "desligar"
-# coman_5 = "cadastrar comando"
-
-# if inst == coman_1: 
-# 	pyautogui.hotkey('alt','tab')
-# 	time.sleep(2)
-# 	pyautogui.hotkey('alt','esc')
-
-# elif inst == coman_2: 
-#         pyautogui.hotkey('alt','tab')
-#         time.sleep(2)
-#         pyautogui.hotkey('alt','f4')
-
-# elif inst == coman_3: 
-# #        pyautogui.hotkey('alt','tab')
-#         time.sleep(2)
-#         pyautogui.hotkey('ctrl','alt','t')
-        
+   
 # elif inst == coman_4: 
 #         pyautogui.hotkey('alt','tab')
 #         time.sleep(2)
@@ -58,6 +37,20 @@ with open('src/json/command_atalho_list.txt') as file:
                         pyautogui.hotkey(comman[2],comman[3],comman[4],comman[5],comman[6])
 if(flag):            
         if (inst == 'cadastrar comando'):
-                exec(open("./command_reg.py").read()) 
+                exec(open("src/script/command_reg.py").read())
+        elif (inst == 'editar comando'):
+                exec(open("src/script/command_edit.py").read())
+        elif (inst == 'listar comandos'):
+                with open('src/json/command_atalho_list.txt') as file: 
+                        print("\nComandos disponíveis:")   
+                        comandos = file.read().split('\n')
+                        for x in range(len(comandos)):
+                                comman = comandos[x].split(';')
+                                print("\n{}".format(comman[0]))
+                        print("\n")
+        elif (inst == 'listar comandos e atalhos'):
+                exec(open("src/script/command_list.py").read())
+        elif (inst == 'apagar comando'):
+                exec(open("src/script/command_del.py").read())
         else:
                 print("Comando nao listado ...")
