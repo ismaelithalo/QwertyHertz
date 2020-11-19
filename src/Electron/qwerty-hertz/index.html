@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     
     <link rel="stylesheet" href="src/styles/main.css">
-
+    <style>
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    
     <title>Qwerty Hertz</title>
   </head>
-  <body>
-    
+  <body onload="startDialog()">
     <main>
       <section>
         <nav class="sidebar">
-          <span>  >  </span>
-        </nav>
-      
-      <section class="main-section">
-        <h3>Olá, bem-vindo(a) ao Qwerty Hertz!</h3>
-          <div id="circle">
-            <img id="img-mic" src="src/img/mic.png" alt="Microfone">
+          <div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <img  src="./src/img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
+              </span>
           </div>
-          <a href="src/pages/Tittle/index.html" class="link-main">Next</a>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              <img  src="./src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
+            </a>
+            <button id="listar-comando">Listar Comandos</button>
+            <button id="ad-comando">Adicionar Comandos</button>
+            <button id="pers-comando">Personalizar Comandos</button>
+            <button id="velo-record">Velocidade de Recordação</button>
+            <button id="atra-comando">Atraso de Comandos</button>
+            <button id="creditos">Créditos</button>
+          </div>
+        </nav>
+
+        <div id="main">
+            <section class="main-section">
+                <h3 id="dialog">Olá, bem-vindo(a) ao Qwerty Hertz!</h3>
+                <div id="circle">
+                  <a href="">
+                    <img id="img-mic" src="./src/img/mic.png" alt="Microfone">
+                  </a>
+                </div>
+                <img id="logo" src="./src/img/logo.png" alt="Qwerty Hertz">
+              </section>
+              
+        </div>
       </section>
     </main>
 
-    <script src="./renderer.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      function startDialog() {
+        setTimeout(function() {
+          var t = document.getElementById('dialog');
+          t.classList.add("fade-dialog");
+          t.innerText = "Quando estiver pronto, pressione este botão";
+        }, 3000);
+      }
+    </script>
+    
   </body>
 </html>

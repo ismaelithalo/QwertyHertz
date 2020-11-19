@@ -4,3 +4,5 @@ src/json/command.json
 src/json/text.txt
 #testes em interface 
 src/Python_GUI/teste/
+#Arquivo de localização do python
+.vscode
