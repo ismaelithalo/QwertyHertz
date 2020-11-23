@@ -1,0 +1,213 @@
+body {
+    padding: 0;
+      margin: 0;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 0;
+    width: 15vw;
+  }
+
+  #terminal {
+      display: flex;
+      position: relative;
+      background-color: #EFEFEF;
+      height: 200px;
+      width: 400px;
+      margin-top: 50px;
+      left: -12vw;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .main-section {
+      position: absolute;
+      right: 0;
+      width: 85vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #FCB040;
+  }
+  .main-section2{
+    flex-direction: row;
+  }
+  .main-section h3{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 22px;
+      margin-bottom: 5vh;
+  }
+  #circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 15rem;
+      width: 15rem;
+      border-radius: 50%;
+      background-color: #EFEFEF;
+      margin-top: -100px;
+      
+  }
+  #img-mic {
+      height: 12rem;
+  }
+  #logo {
+      position: relative;
+      bottom: 0;
+      width: 10rem;
+      align-self: flex-end;
+      margin-top: -40px;
+  }
+  #cancelar {
+      background-color: #EFEFEF;
+      text-align: center;
+      font-size: 30px;
+      border-radius: 15px;
+      cursor: pointer;
+      height: 45px;
+      width: 130px;
+      position: relative;
+      align-self: flex-end;
+      margin-top: -110px;
+      margin-right: 70px;
+      font-weight: bold;
+  }
+  #sair {
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    position: relative;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: 70px;
+    font-weight: bold;
+  }
+  .link-main {
+      color: #EFEFEF;
+      text-decoration: none;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 20px;
+  
+  }
+  .link-main:hover {
+      text-decoration: none;
+  }
+  #listar-comando{
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  #ad-comando {
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  #pers-comando {
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  #velo-record {
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;;
+      font-weight: bold;
+  }
+  #atra-comando {
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  #creditos {
+      margin-top: 20px;
+      border-radius: 10px;
+      border-bottom: 0px;
+      border: 0px;
+      height: 50px;
+      width: 100px;
+      font-weight: bold;
+  }
+  .sidebar {
+      position: absolute;
+      height: 100%;
+      width: 15vw;
+      background-color: #242424;
+      color: #EFEFEF;
+      border-right: 2px  #EFEFEF solid;
+      text-align: center;
+      
+  }
+
+.fade-dialog {
+    /* color: #bbb; */
+    padding-left: 3px;
+
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; 
+}
+  

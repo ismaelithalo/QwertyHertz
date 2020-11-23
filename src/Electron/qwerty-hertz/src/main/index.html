@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
-    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="../main/style.css">
     <style>
       @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -22,13 +22,13 @@
         <nav class="sidebar">
           <div>
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-                <img  src="./src/img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
+                <img  src="../img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
               </span>
           </div>
 
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              <img  src="./src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
+              <img  src="../img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
             </a>
             <button id="listar-comando">Listar Comandos</button>
             <button id="ad-comando">Adicionar Comandos</button>
@@ -41,14 +41,25 @@
 
         <div id="main">
             <section class="main-section">
-                <h3 id="dialog">Olá, bem-vindo(a) ao Qwerty Hertz!</h3>
+                <img id="logo" src="../img/logo.png" alt="Qwerty Hertz">
                 <div id="circle">
-                  <a href="src/main/index.html">
-                    <img id="img-mic" src="./src/img/mic.png" alt="Microfone">
+                  <a href="">
+                    <img id="img-mic" src="../img/mic.png" alt="Microfone">
                   </a>
+                  
                 </div>
-                <img id="logo" src="./src/img/logo.png" alt="Qwerty Hertz">
+            <section class="main-section2">
+                <div id="terminal">
+
+                </div>
+                
+            </section> 
+            
+            <a id="cancelar">Cancelar</a>
+            <a id="sair">Sair</a>
+      
               </section>
+              
               
         </div>
       </section>
