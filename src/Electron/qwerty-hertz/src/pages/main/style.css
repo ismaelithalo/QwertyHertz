@@ -1,6 +1,6 @@
 body {
     padding: 0;
-      margin: 0;
+    margin: 0;
   }
   
   .sidenav {
@@ -20,7 +20,7 @@ body {
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -33,7 +33,7 @@ body {
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 20px;
     font-size: 36px;
     margin-left: 50px;
   }
@@ -42,6 +42,7 @@ body {
     transition: margin-left .5s;
     padding: 0;
     width: 15vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   #terminal {
@@ -101,21 +102,23 @@ body {
   #cancelar {
       background-color: #EFEFEF;
       text-align: center;
-      font-size: 30px;
+      font-size: 25px;
       border-radius: 15px;
       cursor: pointer;
       height: 45px;
       width: 130px;
       position: relative;
       align-self: flex-end;
-      margin-top: -110px;
+      margin-top: -130px;
       margin-right: 70px;
-      font-weight: bold;
+      text-decoration: none;
+      padding-top: 10px;
+      color: #242424;
   }
   #sair {
     background-color: #EFEFEF;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 15px;
     cursor: pointer;
     height: 45px;
@@ -124,7 +127,8 @@ body {
     align-self: flex-end;
     margin-top: 20px;
     margin-right: 70px;
-    font-weight: bold;
+    padding-top: 10px;
+    
   }
   .link-main {
       color: #EFEFEF;

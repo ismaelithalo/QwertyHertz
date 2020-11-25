@@ -15,7 +15,10 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadFile('index.html')
-
+  // mainWindow.setMenu(null)
+  // mainWindow.maximize()
+  mainWindow.setResizable(false)
+  mainWindow.on('unmaximize', () => mainWindow.maximize());
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 }

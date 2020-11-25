@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
-    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
       @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -22,13 +22,13 @@
         <nav class="sidebar">
           <div>
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-                <img  src="../img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
+                <img  src="../../img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
               </span>
           </div>
 
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              <img  src="../img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
+              <img  src="../../img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
             </a>
             <button onclick="location.href='../listar/index.html';" id="listar-comando">Listar Comandos</button>
             <button onclick="location.href='../adicionar/index.html';" id="ad-comando">Adicionar Comandos</button>
@@ -41,10 +41,10 @@
 
         <div id="main">
             <section class="main-section">
-                <img id="logo" src="../img/logo.png" alt="Qwerty Hertz">
+                <img id="logo" src="../../img/logo.png" alt="Qwerty Hertz">
                 <div id="circle">
-                  <a href="">
-                    <img id="img-mic" src="../img/mic.png" alt="Microfone">
+                  <a onclick="writeBash()" style="cursor: pointer;">
+                    <img id="img-mic" src="../../img/mic.png" alt="Microfone">
                   </a>
                   
                 </div>
@@ -55,8 +55,8 @@
                 
             </section> 
             
-            <a id="cancelar">Cancelar</a>
-            <a id="sair">Sair</a>
+            <a id="cancelar" href="../../../index.html">Cancelar</a>
+            <a id="sair" onclick="window.top.close(); return false">Sair</a>
       
               </section>
               
@@ -74,12 +74,10 @@
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
       }
-      function startDialog() {
-        setTimeout(function() {
-          var t = document.getElementById('dialog');
-          t.classList.add("fade-dialog");
-          t.innerText = "Quando estiver pronto, pressione este botão";
-        }, 3000);
+      function writeBash() {
+        var t = document.getElementById('terminal');
+        t.innerText = "Top"
+        //alert("Top");
       }
     </script>
     
