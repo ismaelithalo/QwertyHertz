@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
-    <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="../apagar/style.css">
     <style>
       @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -42,21 +42,19 @@
         <div id="main">
             <section class="main-section">
                 <img id="logo" src="../img/logo.png" alt="Qwerty Hertz">
-                <div id="circle">
-                  <a href="">
-                    <img id="img-mic" src="../img/mic.png" alt="Microfone">
-                  </a>
-                  
-                </div>
-            <section class="main-section2">
+                <h3 id="dialog">Apagar Comandos</h3>
+                
                 <div id="terminal">
 
                 </div>
+
+            <section class="main-section2">
+                
                 
             </section> 
             
-            <a id="cancelar">Cancelar</a>
-            <a id="sair">Sair</a>
+            
+            <a href="../personalizar/index.html" id="ok">OK</a>
       
               </section>
               
@@ -73,13 +71,6 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.getElementById("main").style.marginLeft= "0";
-      }
-      function startDialog() {
-        setTimeout(function() {
-          var t = document.getElementById('dialog');
-          t.classList.add("fade-dialog");
-          t.innerText = "Quando estiver pronto, pressione este botão";
-        }, 3000);
       }
     </script>
     

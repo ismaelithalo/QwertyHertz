@@ -43,6 +43,16 @@ body {
     padding: 0;
     width: 15vw;
   }
+
+  #terminal {
+      display: flex;
+      position: relative;
+      background-color: #EFEFEF;
+      height: 200px;
+      width: 400px;
+      margin-top: 50px;
+      left: -12vw;
+  }
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -56,31 +66,60 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       background-color: #FCB040;
+  }
+  .main-section2{
+    flex-direction: row;
   }
   .main-section h3{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-size: 22px;
       margin-bottom: 5vh;
   }
-  #circle {
+  #listaComandos {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 18rem;
-      width: 18rem;
-      border-radius: 50%;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 400px;
+      height: 60px;
+      border-radius: 10px;
       background-color: #EFEFEF;
+      margin-top: 10px;
+      text-align: left;
   }
-  #img-mic {
-      height: 13rem;
+  #listaComandos2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #EFEFEF;
+    margin-top: 20px;
+    text-align: left;
   }
   #logo {
-      position: absolute;
+      position: relative;
       bottom: 0;
       width: 10rem;
       align-self: flex-end;
+      margin-top: -40px;
+  }
+  #ok {
+    background-color: #EFEFEF;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 45px;
+    width: 130px;
+    position: relative;
+    align-self: flex-end;
+    margin-top: 230px;
+    margin-right: 30px;
+    color: #242424;
+    text-decoration: none;
   }
   .link-main {
       color: #EFEFEF;
@@ -164,12 +203,20 @@ body {
       text-align: center;
       
   }
-
-.fade-dialog {
-    /* color: #bbb; */
-    padding-left: 3px;
-
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; 
-}
-  
+  #dialog {
+    margin-top: -90px;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    color: #242424;
+  }
+  #comando {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-left: 15px;
+  }
+  #numtelas {
+    font-size: 20px;
+    margin-top: 7px;
+    margin-right: 50px;
+  }
