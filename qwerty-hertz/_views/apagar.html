@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
-    <link rel="stylesheet" href="../listar/style.css">
+    <link rel="stylesheet" href="../src/styles/apagar.css">
     <style>
       @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -22,36 +22,30 @@
         <nav class="sidebar">
           <div>
               <span style="font-size:30px;cursor:pointer" onclick="openNav()">
-                <img  src="../img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
+                <img  src="../src/img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
               </span>
           </div>
 
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              <img  src="../img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
+              <img  src="../src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
             </a>
-            <button onclick="location.href='../listar/index.html';" id="listar-comando">Listar Comandos</button>
-            <button onclick="location.href='../adicionar/index.html';" id="ad-comando">Adicionar Comandos</button>
-            <button onclick="location.href='../personalizar/index.html';" id="pers-comando">Personalizar Comandos</button>
-            <button onclick="location.href='../velocidade/index.html';" id="velo-record">Velocidade de Recordação</button>
-            <button onclick="location.href='../atraso/index.html';" id="atra-comando">Atraso de Comandos</button>
-            <button onclick="location.href='../creditos/index.html';" id="creditos">Créditos</button>
+            <button onclick="location.href='./listar.html';" id="listar-comando">Listar Comandos</button>
+            <button onclick="location.href='./adicionar.html';" id="ad-comando">Adicionar Comandos</button>
+            <button onclick="location.href='./personalizar.html';" id="pers-comando">Personalizar Comandos</button>
+            <button onclick="location.href='./velocidade.html';" id="velo-record">Velocidade de Recordação</button>
+            <button onclick="location.href='./atraso.html';" id="atra-comando">Atraso de Comandos</button>
+            <button onclick="location.href='./creditos.html';" id="creditos">Créditos</button>
           </div>
         </nav>
 
         <div id="main">
             <section class="main-section">
-                <img id="logo" src="../img/logo.png" alt="Qwerty Hertz">
-                <h3 id="dialog">Listar Comandos</h3>
+                <img id="logo" src="../src/img/logo.png" alt="Qwerty Hertz">
+                <h3 id="dialog">Apagar Comandos</h3>
                 
-                <div id="listaComandos">
+                <div id="terminal">
 
-                  <h1 id="comando" >Comando:    </br>teclas:    </h1>
-                  <h1 id="numtelas" >Nº de teclas:    </h1>
-                </div>
-                <div id="listaComandos2">
-                    <h1 id="comando" >Comando:    </br>teclas:    </h1>
-                    <h1 id="numtelas" >Nº de teclas:    </h1>
                 </div>
 
             <section class="main-section2">
@@ -60,7 +54,7 @@
             </section> 
             
             
-            <a href="../main/index.html" id="ok">OK</a>
+            <a href="./main.html" id="ok">OK</a>
       
               </section>
               
