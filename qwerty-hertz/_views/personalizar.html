@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../_linkers/com_per.js" charset="utf-8"></script>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
@@ -30,11 +30,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
               <img  src="../src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
             </a>
+            <button onclick="location.href='./main.html';" id="listar-comando">Início</button>
             <button onclick="location.href='./listar.html';" id="listar-comando">Listar Comandos</button>
             <button onclick="location.href='./adicionar.html';" id="ad-comando">Adicionar Comandos</button>
             <button onclick="location.href='./personalizar.html';" id="pers-comando">Personalizar Comandos</button>
-            <button onclick="location.href='./velocidade.html';" id="velo-record">Velocidade de Recordação</button>
-            <button onclick="location.href='./atraso.html';" id="atra-comando">Atraso de Comandos</button>
             <button onclick="location.href='./creditos.html';" id="creditos">Créditos</button>
           </div>
         </nav>
@@ -44,12 +43,12 @@
                 <img id="logo" src="../src/img/logo.png" alt="Qwerty Hertz">
                 <h3 id="dialog">Personalizar Comandos</h3>
 
-                <a href="./editar.html" id="listaComandos">
+                <a id="listaComandos" onclick="comEdit()">
 
                   <h1  id="comando" >Editar comando</h1>
                   
                 </a>
-                <a href="./apagar.html" id="listaComandos2">
+                <a id="listaComandos2" onclick="comDel()">
                     <h1 id="comando" >Apagar comando</h1>
                     
                 </a>
@@ -60,7 +59,6 @@
             </section> 
             
             
-            <a href="./main.html" id="ok">OK</a>
       
               </section>
               

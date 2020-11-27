@@ -1,6 +1,7 @@
 body {
     padding: 0;
       margin: 0;
+      background-color: #FCB040;
   }
   
   .sidenav {
@@ -62,7 +63,7 @@ body {
       position: absolute;
       right: 0;
       width: 85vw;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -82,11 +83,13 @@ body {
       justify-content: space-between;
       align-items: flex-start;
       width: 400px;
-      height: 60px;
+      min-height: 60px;
       border-radius: 10px;
       background-color: #EFEFEF;
       margin-top: 10px;
       text-align: left;
+      margin-bottom: 20px;
+      padding-left: 20px;
   }
   #listaComandos2 {
     display: flex;

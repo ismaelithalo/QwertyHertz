@@ -1,4 +1,5 @@
-with open('src/json/command_atalho_list.txt') as file: 
+# coding: iso-8859-1
+with open('script/command_atalho_list.txt') as file: 
     print("\nComandos disponíveis:")   
     comandos = file.read().split('\n')
     for x in range(len(comandos)):
@@ -14,3 +15,4 @@ with open('src/json/command_atalho_list.txt') as file:
                     print("Comando: {}".format(comman[i]))
                     print("\nAtalhos:")
     print("\n")
+# print("Teste")

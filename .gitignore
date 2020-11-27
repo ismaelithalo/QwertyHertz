@@ -1,8 +1,11 @@
+#pacotes espec[ificos dos pacotes instalados
+qwerty-hertz/node_modules
+
 #arquivo que guarda o resultado da gravação codificada
-src/json/command.json
-#arquivo que guarda o resultado da gravação em fake json
-src/json/text.txt
-#testes em interface 
-src/Python_GUI/teste/
+qwerty-hertz/script/**/*.txt
+
+#arquivo que guarda o resultado da gravação convertida
+qwerty-hertz/script/**/*.json
+
 #Arquivo de localização do python
 .vscode

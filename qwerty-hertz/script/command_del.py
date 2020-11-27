@@ -7,26 +7,26 @@ r = sr.Recognizer()                                                             
 
 with sr.Microphone() as source:                                                                     #Função que usa a lib de recordação e guarda a resposta em uma variável
     r.adjust_for_ambient_noise(source)
-    print("\n\nRepita pausadamente o comando que queira editar, você tem 3 segundos ...")
+    print("\n\nRepita pausadamente o comando que queira apagar, você tem 3 segundos ...")
     data = r.record(source, duration=3)
     text = r.recognize_google(data,show_all=True,language='pt')
 
 if len(text) == 0:                                                                                  #Verifica se a recordação está vazia
     sys.exit()
 
-with open('src/json/comm_edit.txt', 'w') as file:                                                    #Salva a gravação em um arquivo
+with open('script/comm_edit.txt', 'w') as file:                                                    #Salva a gravação em um arquivo
     file.write("{}".format(text))
     
-with open('src/json/comm_edit.txt') as file:                                                         #Lê esse arquivo
+with open('script/comm_edit.txt') as file:                                                         #Lê esse arquivo
     text = file.read()
 
 text = text.replace("\'", "\"")                                                                     #Substitui os elementos de um fake json por um json completo
 text = text.replace("True", "true")
 
-with open('src/json/edit_command.json', 'w') as t_json:                                              #Grava o json em um arquivo
+with open('script/edit_command.json', 'w') as t_json:                                              #Grava o json em um arquivo
     t_json.write(text)
 
-with open('src/json/edit_command.json', 'r') as input_file:                                          #Abre o arquivo do json e o coloca em uma variável
+with open('script/edit_command.json', 'r') as input_file:                                          #Abre o arquivo do json e o coloca em uma variável
     data = json.load(input_file)
 
 comm = data['alternative'][0]['transcript']                                                         #Seleciona o primeiro elemento do json pois é o maior precisão
@@ -34,10 +34,10 @@ comm = data['alternative'][0]['transcript']                                     
 flag_1 = True
 flag_2 = False
 
-with open('src/json/command_atalho_list.txt','r') as file:
+with open('script/command_atalho_list.txt','r') as file:
     lines = file.readlines()
     
-with open('src/json/command_atalho_list.txt') as file:    
+with open('script/command_atalho_list.txt') as file:    
     comandos = file.read().split('\n')
     mantem = []
     for x in range(len(comandos)):
@@ -59,7 +59,7 @@ with open('src/json/command_atalho_list.txt') as file:
                 sys.exit()
     file.close()
 if(flag_2):
-    with open('src/json/command_atalho_list.txt','w') as file:
+    with open('script/command_atalho_list.txt','w') as file:
         novo = "\n".join(mantem)
         file.write(novo)
 if(flag_1):            

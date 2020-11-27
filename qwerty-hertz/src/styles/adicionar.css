@@ -71,9 +71,12 @@ body {
     display: flex;
     height: 170px;
     width: 400px;
-    margin-top: 10px;
     background: #EFEFEF;
     border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
   #listaComandos {
     display: flex;
@@ -200,7 +203,6 @@ body {
       
   }
   #dialog {
-    margin-top: -90px;
     font-weight: normal;
     font-size: 30px;
     text-align: center;

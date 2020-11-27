@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../_linkers/com_list.js" charset="utf-8"></script>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     
@@ -16,7 +16,7 @@
     
     <title>Qwerty Hertz</title>
   </head>
-  <body onload="startDialog()">
+  <body onload="comList()">
     <main>
       <section>
         <nav class="sidebar">
@@ -30,11 +30,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
               <img  src="../src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
             </a>
+            <button onclick="location.href='./main.html';" id="listar-comando">Início</button>
             <button onclick="location.href='./listar.html';" id="listar-comando">Listar Comandos</button>
             <button onclick="location.href='./adicionar.html';" id="ad-comando">Adicionar Comandos</button>
             <button onclick="location.href='./personalizar.html';" id="pers-comando">Personalizar Comandos</button>
-            <button onclick="location.href='./velocidade.html';" id="velo-record">Velocidade de Recordação</button>
-            <button onclick="location.href='./atraso.html';" id="atra-comando">Atraso de Comandos</button>
             <button onclick="location.href='./creditos.html';" id="creditos">Créditos</button>
           </div>
         </nav>
@@ -45,23 +44,23 @@
                 <h3 id="dialog">Listar Comandos</h3>
                 
                 <div id="listaComandos">
-
+                  <!-- <h1 id="comando" >Comando:    </br>teclas:    </h1>
+                  <h1 id="numtelas" >Nº de teclas:    </h1> -->
+                </div>
+                <!-- <div id="listaComandos">
                   <h1 id="comando" >Comando:    </br>teclas:    </h1>
                   <h1 id="numtelas" >Nº de teclas:    </h1>
-                </div>
-                <div id="listaComandos2">
+                </div> -->
+                <!-- <div id="listaComandos2">
                     <h1 id="comando" >Comando:    </br>teclas:    </h1>
                     <h1 id="numtelas" >Nº de teclas:    </h1>
-                </div>
+                </div> -->
 
             <section class="main-section2">
                 
                 
             </section> 
             
-            
-            <a href="./main.html" id="ok">OK</a>
-      
               </section>
               
               

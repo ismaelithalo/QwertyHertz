@@ -14,19 +14,19 @@ with sr.Microphone() as source:                                                 
 if len(text) == 0:                                                                                  #Verifica se a recordação está vazia
     sys.exit()
 
-with open('src/json/comm_rec.txt', 'w') as file:                                                    #Salva a gravação em um arquivo
+with open('script/comm_rec.txt', 'w') as file:                                                    #Salva a gravação em um arquivo
     file.write("{}".format(text))
 
-with open('src/json/comm_rec.txt') as file:                                                         #Lê esse arquivo
+with open('script/comm_rec.txt') as file:                                                         #Lê esse arquivo
     text = file.read()
 
 text = text.replace("\'", "\"")                                                                     #Substitui os elementos de um fake json por um json completo
 text = text.replace("True", "true")
 
-with open('src/json/cad_command.json', 'w') as t_json:                                              #Grava o json em um arquivo
+with open('script/cad_command.json', 'w') as t_json:                                              #Grava o json em um arquivo
     t_json.write(text)
 
-with open('src/json/cad_command.json', 'r') as input_file:                                          #Abre o arquivo do json e o coloca em uma variável
+with open('script/cad_command.json', 'r') as input_file:                                          #Abre o arquivo do json e o coloca em uma variável
     data = json.load(input_file)
 
 comm = data['alternative'][0]['transcript']                                                         #Seleciona o primeiro elemento do json pois é o maior precisão
@@ -48,7 +48,7 @@ print("Conferindo. As seguintes informações serão cadastradas, está tudo cer
 if (input() == 's'):                                                                                #Confirma com o usuário se as instruções recebidas estão corretas
     comando = '\n'+";".join(teclas)                                                                 #Pega todos os elementos do array e os coloca em uma string separada pelo elemento ;
     
-    with open('src/json/command_atalho_list.txt', 'a') as file:                                            #Abre o arquivo de comandos no modo de adicionar                                      
+    with open('script/command_atalho_list.txt', 'a') as file:                                            #Abre o arquivo de comandos no modo de adicionar                                      
         file.write(comando)                                                                         #Insere essa string no arquivo
 else:
     print("Ok. Reinicie o processo de gravação.")

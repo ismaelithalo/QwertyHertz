@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    
+    <link rel="stylesheet" href="../src/styles/listar.css">
+    <style>
+      @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    </style>
+    
+    <title>Qwerty Hertz</title>
+  </head>
+  <body onload="comList()">
+    <main>
+      <section>
+        <nav class="sidebar">
+          <div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <img  src="../src/img/outline_keyboard_arrow_right_white_36dp.png" alt="seta">
+              </span>
+          </div>
+
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              <img  src="../src/img/outline_keyboard_arrow_left_white_36dp.png" alt="seta">
+            </a>
+            <button onclick="location.href='./main.html';" id="listar-comando">Início</button>
+            <button onclick="location.href='./listar.html';" id="listar-comando">Listar Comandos</button>
+            <button onclick="location.href='./adicionar.html';" id="ad-comando">Adicionar Comandos</button>
+            <button onclick="location.href='./personalizar.html';" id="pers-comando">Personalizar Comandos</button>
+            <button onclick="location.href='./creditos.html';" id="creditos">Créditos</button>
+          </div>
+        </nav>
+
+        <div id="main">
+            <section class="main-section">
+                <img id="logo" src="../src/img/logo.png" alt="Qwerty Hertz">
+                <h3 id="dialog">Créditos</h3>
+                
+                <div id="listaComandos">
+                  <h3>
+                    Idealizador inicial do projeto: Gustavo de Oliveira Teixeira
+                    <br><br>
+                    Arquiteto do sistema: Ismael Ithalo
+                    <br><br>
+                    Desenvolvedor principal: Ismael Ithalo
+                    <br><br>
+                    Desenvolvedor secundário: Mateus Estrela
+                    <br><br>
+                    Executor operacional: Gustavo de Oliveira Teixeira
+                  </h3>
+                  <br>
+                  <!-- <h3>Arquiteto do sistema: Ismael Ithalo</h3><br>
+                  <h3>Desenvolvedor principal: Ismael Ithalo</h3><br>
+                  <h3>Desenvolvedor secundário: Mateus Estrela</h3><br>
+                  <h3>Executor operacional: Gustavo de Oliveira Teixeira</h3><br> -->
+                </div>
+
+            <section class="main-section2">
+                
+                
+            </section> 
+            
+              </section>
+              
+              
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "200px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+    
+  </body>
+</html>

@@ -50,6 +50,7 @@ body {
   }
   .main-section {
       position: absolute;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       right: 0;
       width: 85vw;
       height: 100vh;
@@ -64,7 +65,7 @@ body {
   }
   .main-section h3{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 22px;
+      font-size: 18px;
       margin-bottom: 5vh;
   }
   #listaComandos {
@@ -132,7 +133,6 @@ body {
       border: 0px;
       height: 50px;
       width: 100px;
-      font-weight: bold;
       cursor: pointer;
   }
   #ad-comando {
@@ -142,7 +142,6 @@ body {
       border: 0px;
       height: 50px;
       width: 100px;
-      font-weight: bold;
       cursor: pointer;
   }
   #pers-comando {

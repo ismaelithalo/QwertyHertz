@@ -1,1 +1,0 @@
-{'alternative': [{'transcript': 'Abrir terminal', 'confidence': 0.96170539}, {'transcript': 'Abrir Terminal 1'}], 'final': True}
