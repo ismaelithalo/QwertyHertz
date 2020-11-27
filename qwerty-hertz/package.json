@@ -1,19 +1,19 @@
 {
-  "name": "ferramentas-python",
-  "productName": "Ferramentas Python",
+  "name": "qwerty-hertz",
+  "productName": "Qwerty Hertz",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Uma aplicaçao de reconhecimento de voz e realizaçao de comandos",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/ismaelithalo/QwertyHertz",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Python",
+    "Voice",
+    "Hotkeys",
+    "Terminal"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
