@@ -58,6 +58,7 @@ with open('src/json/command_atalho_list.txt') as file:
                 flag_2 = False
                 sys.exit()
     file.close()
+
 if(flag_2):
     with open('src/json/command_atalho_list.txt','w') as file:
         novo = "\n".join(mantem)
